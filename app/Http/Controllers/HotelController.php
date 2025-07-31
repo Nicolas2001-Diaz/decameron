@@ -106,13 +106,11 @@ class HotelController extends Controller
      */
     public function destroy(Hotel $hotel)
     {
-        echo $hotel;
-
         $hotel->delete();
 
-
-        return response('', 204);
+        return response()->json(null, 204);
     }
+
 
     /**
      * Crear las habitaciones
