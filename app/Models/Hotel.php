@@ -22,6 +22,6 @@ class Hotel extends Model
     /** Obtener las habitaciones del hotel */
     public function habitaciones()
     {
-        return $this->hasMany('App\models\Habitacion');
+        return $this->hasMany('App\Models\Habitacion');
     }
 }
